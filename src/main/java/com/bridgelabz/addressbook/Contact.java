@@ -9,6 +9,11 @@ public class Contact {
     public int zipCode;
 	public String phoneNumber;
 	public String email;
+	
+	 Contact(String firstName, String lastName, String address, String city, String state, int zipcode,
+			String phonenumber, String email) {
+		
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -63,8 +68,6 @@ public class Contact {
 				+ ", state=" + state + ", zipCode=" + zipCode + ", phoneNumber=" + phoneNumber + ", email=" + email
 				+ "]";
 	}
-		
-	
 }	
 	
 
