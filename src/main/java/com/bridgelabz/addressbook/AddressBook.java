@@ -38,7 +38,9 @@ public class AddressBook  {
 		Contact.phoneNumber = sc.next();
 		return Contact;
 	}	
-	
+	static Contact deleteContactDetailsDetails(Contact Contact) {
+		return null;
+}
 	static void menu() {
 		Contact ContactDetails = null;
 		int choice;
@@ -60,13 +62,22 @@ public class AddressBook  {
 				}
 				break;
 			case 3:
+				System.out.println("Enter the ContactDetails name to Delete the Details");
+				String firstName1 = sc.next();
+				if (firstName1.equals(ContactDetails.firstName)) {
+					ContactDetails = deleteContactDetailsDetails(ContactDetails);
+				} else {
+					System.out.println(firstName1 + " is not exists ");
+				}
+				break;
+			case 4:
 				System.out.println(ContactDetails);
 				break;
 			default:
-				System.out.println("Enter numer from 1 to 3");
+				System.out.println("Enter numer from 1 to 4");
 			}
 		}
-		 while (choice < 4);
+		 while (choice < 5);
 
 		}
 }
